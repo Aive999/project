@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    background-color: #fff;
+    color: #000;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Header Styles */
+.header {
+    background-color: #5C4033;
+    color: #fff;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.logo {
+    margin-bottom: 0;
+}
+
+.logo-main {
+    font-size: 72px;
+    font-weight: normal;
+    letter-spacing: 8px;
+    margin-bottom: 12px;
+    font-family: 'Georgia', serif;
+}
+
+.logo-sub {
+    font-size: 18px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+/* About Section */
+.about-section {
+    display: flex;
+    padding: 60px 40px;
+    background-color: #fff;
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.about-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.about-text {
+    font-size: 15px;
+    margin-bottom: 25px;
+    text-align: left;
+    line-height: 1.8;
+    font-family: 'Georgia', serif;
+    text-align: justify;
+}
+
+.contact-info {
+    flex: 0 0 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-right: 40px;
+    border-right: 1px solid #ddd;
+    min-width: 0;
+}
+
+.office {
+    text-align: left;
+}
+
+.office-name {
+    font-size: 16px;
+    font-weight: bold !important;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.office p {
+    font-size: 13px;
+    margin-bottom: 4px;
+    font-weight: normal;
+}
+
+/* Side Images */
+.side-image {
+    flex: 0 0 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 0;
+}
+
+.side-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 200px;
+}
+
+/* Practice Areas Section */
+.practice-areas {
+    display: flex;
+    padding: 60px 40px;
+    background-color: #fff;
+    gap: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.practice-areas .practice-list {
+    flex: 1;
+    min-width: 0;
+}
+
+.email-contact {
+    text-align: right;
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+}
+
+.section-title {
+    font-size: 22px;
+    text-align: left;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    color: #000;
+    font-weight: normal;
+    border-bottom: 2px solid #000;
+    padding-bottom: 15px;
+}
+
+.practice-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.practice-item {
+    padding: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+    min-width: 0;
+}
+
+.practice-name {
+    font-size: 15px;
+    margin-bottom: 8px;
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.practice-desc {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding-left: 0;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    /* Header */
+    .header {
+        padding: 35px 20px;
+    }
+
+    .logo-main {
+        font-size: 38px;
+        letter-spacing: 3px;
+        line-height: 1.1;
+    }
+
+    .logo-sub {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    /* About Section */
+    .about-section {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 25px;
+    }
+
+    .about-content {
+        width: 100%;
+    }
+
+    .about-text {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    /* Contact Info */
+    .contact-info {
+        width: 100%;
+        padding-right: 0;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 25px;
+        gap: 20px;
+    }
+
+    .office-name {
+        font-size: 15px;
+    }
+
+    .office p {
+        font-size: 13px;
+    }
+
+    /* Side Images */
+    .side-image {
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .side-image img {
+        width: 100%;
+        margin-bottom: 0;
+        border-radius: 6px;
+    }
+
+    /* Practice Section */
+    .practice-areas {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 25px;
+    }
+
+    .practice-list {
+        width: 100%;
+    }
+
+    .section-title {
+        font-size: 18px;
+        margin-bottom: 25px;
+        padding-bottom: 10px;
+        line-height: 1.4;
+    }
+
+    .practice-name {
+        font-size: 14px;
+    }
+
+    .practice-desc {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .email-contact {
+        text-align: left;
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+}
