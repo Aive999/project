@@ -1,0 +1,65 @@
+/* Contact page styles */
+.contact-section {
+    padding: 80px 60px;
+    max-width: 1200px;
+    margin: 0 auto 80px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    align-items: start;
+}
+
+.contact-card {
+    background: #fff;
+    padding: 18px 18px 36px;
+}
+
+.map-wrap {
+    position: relative;
+    background: #f6f6f6;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+.map-wrap img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+.map-accent {
+    height: 6px;
+    background: #f36b21;
+    width: 100%;
+}
+
+.office-title {
+    font-size: 28px;
+    margin: 20px 0 12px;
+    color: #111;
+}
+
+.office-details p {
+    font-size: 15px;
+    color: #333;
+    margin: 8px 0;
+}
+
+.office-details a { color: #f36b21; text-decoration: none; }
+
+.fine-print {
+    margin-top: 12px;
+    font-style: italic;
+    color: #777;
+    font-size: 13px;
+}
+
+@media (max-width: 900px) {
+    .contact-grid { grid-template-columns: 1fr; }
+    .map-wrap img { height: 320px; }
+    .contact-section { padding: 30px 16px; }
+}
