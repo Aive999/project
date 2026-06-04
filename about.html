@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>About Us — Evans & Co</title>
-	<link rel="stylesheet" href="/static/style.css">
+	<link rel="stylesheet" href="static/style.css">
 </head>
 <body>
 	<div class="container">
@@ -17,7 +17,9 @@
 				</a>
 			</div>
 
-			<nav class="nav-menu">
+			<button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">☰</button>
+
+			<nav class="nav-menu" id="site-nav">
 				<a href="attorney.html">Attorneys</a>
 				<a href="about.html" class="active">About</a>
 				<a href="contact.html">Contact Us</a>
@@ -181,5 +183,6 @@
             <p class="site-footer-copy">© 2026 Jonathan. All rights reserved.</p>
         </footer>
 	</div>
+	<script src="static/nav.js"></script>
 </body>
 </html>
