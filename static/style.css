@@ -29,6 +29,29 @@ body {
     color: #fff;
 }
 
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.nav-toggle {
+    display: none;
+    border: 1px solid #8B6F47;
+    background: transparent;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 1;
+    padding: 6px 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.nav-toggle:active {
+    transform: scale(0.95);
+}
+
 .header a {
     position: relative;
     text-decoration: none;
@@ -602,9 +625,49 @@ body {
         overflow-x: hidden;
     }
 
+    .header {
+        padding: 16px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+    }
+
+    .nav-menu {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        pointer-events: none;
+        transition: max-height 0.25s ease, opacity 0.2s ease;
+    }
+
+    .nav-menu.open {
+        max-height: 220px;
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .nav-menu a {
+        font-size: 14px;
+        padding-right: 0;
+        padding-bottom: 2px;
+    }
+
     .logo {
         margin-bottom: 0;
-        padding: 0 10px;
+        padding: 0;
     }
 
     .logo-main {
@@ -622,7 +685,7 @@ body {
 
     /* About Section */
     .about-banner {
-        padding: 30px 15px;
+        padding: 30px 16px;
     }
 
     .about-banner img {
@@ -640,6 +703,69 @@ body {
 
     .about-banner-summary {
         font-size: 14px;
+    }
+
+    .what-we-do-section {
+        padding: 10px 16px 40px;
+    }
+
+    .what-we-do-header {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .what-we-do-title {
+        font-size: 28px;
+        text-align: left;
+    }
+
+    .what-we-do-title::after {
+        margin: 14px 0 0;
+    }
+
+    .what-we-do-text {
+        font-size: 16px;
+    }
+
+    .advocate-section {
+        padding: 40px 16px 48px;
+    }
+
+    .advocate-title {
+        font-size: 34px;
+    }
+
+    .advocate-subtitle {
+        font-size: 18px;
+    }
+
+    .advocate-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .advocate-card + .advocate-card {
+        border-left: none;
+        border-top: 2px solid #ffb15c;
+        padding-top: 18px;
+    }
+
+    .approach-section {
+        padding: 50px 16px;
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .approach-copy {
+        font-size: 16px;
+    }
+
+    .approach-heading h2 {
+        font-size: 38px;
+    }
+
+    .site-footer-copy {
+        font-size: 15px;
     }
 
     .about-section {
@@ -761,5 +887,44 @@ body {
     .email-contact {
         text-align: center;
         font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-main {
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+
+    .logo-sub {
+        font-size: 11px;
+        letter-spacing: 1.5px;
+    }
+
+    .about-banner-overlay {
+        left: 18px;
+        right: 18px;
+        bottom: 20px;
+    }
+
+    .about-banner-title {
+        font-size: 24px;
+    }
+
+    .about-banner-summary {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .advocate-title {
+        font-size: 28px;
+    }
+
+    .approach-heading h2 {
+        font-size: 32px;
+    }
+
+    .about-hero-title {
+        font-size: 32px;
     }
 }
